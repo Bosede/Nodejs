@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Spam</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+let mail = prompt("Enter your mail: ", "");
+function checkSpam(str) {
+    let newStr = mail.toLowerCase();
+    if(newStr.includes('viagra') || newStr.includes('xxx') || newStr.includes('free')) {
+        alert("true");
+    } else {
+        alert("false");
+    }
+}
+checkSpam();
+
+	</script>
+</body>
+</html>
